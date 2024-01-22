@@ -10,4 +10,7 @@ while True:
 def displayUsage(cpu_usage, mem_usage, bars=50):
     cpu_percent = (cpu_usage / 100.0)
     cpu_bar '' * int(cpu_percent * bars) + ' ' * (bars - int(cpu_percent * bars))
+    
     mem_percent = (mem_usage / 100.0)
+    mem_bar '' * int(mem_percent * bars) + ' ' * (bars - int(mem_percent * bars))
+    
